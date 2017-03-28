@@ -21,11 +21,17 @@ class EchoTipCalcTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTip() {
+        let calc = EchoTipCalculator()
+        
+        XCTAssertTrue(calc.calcTip(payBeforeTex: 0, tax: 0, tipRate: 0) == 0)
+        XCTAssertTrue(calc.calcTip(payBeforeTex: 10, tax: 2, tipRate: 0.1) == 13)
+        XCTAssertTrue(calc.calcTip(payBeforeTex: 10, tax: 0, tipRate: 0.1) == 11)
+        XCTAssertTrue(calc.calcTip(payBeforeTex: 10, tax: -1, tipRate: 0.1) == 11)
+        XCTAssertTrue(calc.calcTip(payBeforeTex: 10, tax: 2, tipRate: -1) == 12)
+        XCTAssertTrue(calc.calcTip(payBeforeTex: -1, tax: 2, tipRate: 0.1) == 0)
     }
-    
+        
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

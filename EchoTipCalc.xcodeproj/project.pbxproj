@@ -10,6 +10,7 @@
 		5F0CCECF1E89A6D900132BCC /* EchoTipCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0CCEC51E89A6D900132BCC /* EchoTipCalc.framework */; };
 		5F0CCED41E89A6D900132BCC /* EchoTipCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CCED31E89A6D900132BCC /* EchoTipCalcTests.swift */; };
 		5F0CCED61E89A6D900132BCC /* EchoTipCalc.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0CCEC81E89A6D900132BCC /* EchoTipCalc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F0CCF041E8A080A00132BCC /* EchoTipCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0CCF031E8A080A00132BCC /* EchoTipCalc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		5F0CCECE1E89A6D900132BCC /* EchoTipCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EchoTipCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0CCED31E89A6D900132BCC /* EchoTipCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoTipCalcTests.swift; sourceTree = "<group>"; };
 		5F0CCED51E89A6D900132BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F0CCF031E8A080A00132BCC /* EchoTipCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoTipCalc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				5F0CCEC81E89A6D900132BCC /* EchoTipCalc.h */,
 				5F0CCEC91E89A6D900132BCC /* Info.plist */,
+				5F0CCF031E8A080A00132BCC /* EchoTipCalc.swift */,
 			);
 			path = EchoTipCalc;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					5F0CCEC41E89A6D900132BCC = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					5F0CCECD1E89A6D900132BCC = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0CCF041E8A080A00132BCC /* EchoTipCalc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		5F0CCEDA1E89A6D900132BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.echo.tipcalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		5F0CCEDB1E89A6D900132BCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		5F0CCEDD1E89A6D900132BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = EchoTipCalcTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.echo.EchoTipCalcTests;
@@ -367,6 +376,7 @@
 		5F0CCEDE1E89A6D900132BCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = EchoTipCalcTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.echo.EchoTipCalcTests;
@@ -394,6 +404,7 @@
 				5F0CCEDB1E89A6D900132BCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F0CCEDC1E89A6D900132BCC /* Build configuration list for PBXNativeTarget "EchoTipCalcTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +413,7 @@
 				5F0CCEDE1E89A6D900132BCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
