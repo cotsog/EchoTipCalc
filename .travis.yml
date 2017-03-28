@@ -1,0 +1,5 @@
+language: generic
+osx_image: xcode8.0
+xcode_project: EchoTipCalc.xcodeproj
+xcode_scheme: EchoTipCalc
+xcode_sdk: iphonesimulator9.2
