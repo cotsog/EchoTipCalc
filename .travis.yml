@@ -1,7 +1,7 @@
 language: objective-c
 xcode_project: EchoTipCalc.xcodeproj
 xcode_scheme: EchoTipCalcTests
-osx_image: xcode8
+osx_image: xcode8.1
 xcode_sdk: iphonesimulator
 
 
