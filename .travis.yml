@@ -3,8 +3,4 @@ xcode_project: EchoTipCalc.xcodeproj
 xcode_scheme: EchoTipCalc
 xcode_sdk: iphonesimulator10.0
 
-script:
-- xcodebuild clean build test -project EchoTipCalc.xcodeproj -scheme EchoTipCalc
-
-
 
