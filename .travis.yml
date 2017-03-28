@@ -1,11 +1,5 @@
 language: objective-c
 xcode_project: EchoTipCalc.xcodeproj
 xcode_scheme: EchoTipCalcTests
-osx_image: xcode8.1
-xcode_sdk: iphonesimulator10.1
-env:
-  global:
-  - APP_NAME="EchoTipCalc"
-  - 'DEVELOPER_NAME="iPhone Distribution: {GUO YING TAO} ({3V26Q55U3S})”’
-  - PROFILE_NAME="tipcalclibadhoc"
-    secure: DFtBu/2hhrcD4Xjgzovf7urzKfkhGqEvkJN6LJcc/Om+q6CUL6TMt4Q2866IK5iFml2hGEm8lFfj05GvxjP2xWA5wIVHowKC55+ZS/957buKqu1YY7N+nITX3ebo7NwEZB17GUEV0knIZ21DjXfiQBV4DXaWs5Fi8xZo5ICaLhDCkWQyyZM5+9qqJPwWAI9e+xIzYBjTxB8PI/ovcBo/gNq6/zfcZUyy8ERcaLUiCG3B69FkFkYSSOld8uuPDj/fpkeW5wLC2WFaTjeRhyKjjFxQN9NYBRrcQ9U4y6L7KXcFJ05JfFX+dU2aCd/hCHs0UIGXWyWVCmEthwA8wBU1MVboW1pXckRsEwdhKECcyvgyLumch9bgoeUEQ5BIRvY8nwPNPvczvDuAKO3DyM5hW523+IG0U4TbPeTKZzoI6sZ0UdlHjCi7m41sL4Nen4Dat8VxmQ6beHktHwON39BjlUKrM/FZZQzYGsNHygeUB2eBuIg1z0roZ4sCTWq6a9tcvNxy2Ypt0h7r5cABnuV2OoYNa7/tplnfK71b+xdgs17+qFe9zQMKe7+rp9qI1BjN8gXF+UM43qEBVGYR70bnjyhxnN8XvYuHFFq6nge2kPxIQ8gPftzsFLV8/9inTejxkXZzFLPqwqt+qpx7Tt9b8g0D8qU+MN9OHZkaLu8ALCw=
+osx_image: xcode8
+xcode_sdk: iphonesimulator10.0
