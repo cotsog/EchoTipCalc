@@ -1,6 +1,6 @@
 language: objective-c
 xcode_project: EchoTipCalc.xcodeproj
 xcode_scheme: EchoTipCalc
-xcode_sdk: iphonesimulator10.0
+xcode_sdk: iphonesimulator
 
 
