@@ -13,6 +13,10 @@ public class EchoTipCalculator {
         
     }
     
+    public func test() -> Bool {
+        return true
+    }
+    
     public func calcTip(payBeforeTex: Float, tax: Float, tipRate: Float) -> Float {
         guard payBeforeTex >= 0 else {
             return 0
