@@ -1,3 +1,4 @@
-language: objective-c
-osx_image: xcode8
-script: — xcodebuild clean build -project EchoTipCalc.xcodeproj -scheme EchoTipCalcTests -destination “platform=iOS Simulator,name=iPhone 6S”
+ language: objective-c
+ xcode_project: EchoTipCalc.xcodeproj
+ xcode_scheme: EchoTipCalc
+ xcode_sdk: iphonesimulator
