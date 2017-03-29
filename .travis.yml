@@ -3,3 +3,5 @@ xcode_project: EchoTipCalc.xcodeproj
 xcode_scheme: EchoTipCalcTests
 osx_image: xcode8.3
 xcode_sdk: iphonesimulator10.1
+- set -o pipefail && xcodebuild -project EchoTipCalc.xcodeproj -scheme EchoTipCalcTests -sdk iphonesimulator10.1 build test | xcpretty
+
